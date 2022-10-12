@@ -11,92 +11,77 @@ import java.util.ArrayList;
  * @author vu
  */
 public class Student {
-    
- private String StudentID;
-    private String StudentCode;
-    private String StudentSurname;
-    private String StudentMiddlename;
-    private String StudentGivenname;
-    private String StudentEmail;
-    private Group GroupID;
-    private ArrayList<Attendance> attendances = new ArrayList<>();
-    private ArrayList<StudentGroup> studentgroups = new ArrayList<>();
+
+    private String studentid;
+    private String studentcode;
+    private String studentsurname;
+    private String studentmiddlename;
+    private String studentgivenname;
+    private String studentemail;
 
     public Student() {
     }
 
-    public Student(String StudentID, String StudentCode, String StudentSurname, String StudentMiddlename, String StudentGivenname, String StudentEmail, Group GroupID) {
-        this.StudentID = StudentID;
-        this.StudentCode = StudentCode;
-        this.StudentSurname = StudentSurname;
-        this.StudentMiddlename = StudentMiddlename;
-        this.StudentGivenname = StudentGivenname;
-        this.StudentEmail = StudentEmail;
-        this.GroupID = GroupID;
+    public Student(String studentid, String studentcode, String studentsurname, String studentmiddlename, String studentgivenname, String studentemail) {
+        this.studentid = studentid;
+        this.studentcode = studentcode;
+        this.studentsurname = studentsurname;
+        this.studentmiddlename = studentmiddlename;
+        this.studentgivenname = studentgivenname;
+        this.studentemail = studentemail;
     }
 
-    public String getStudentID() {
-        return StudentID;
+    public String getStudentid() {
+        return studentid;
     }
 
-    public void setStudentID(String StudentID) {
-        this.StudentID = StudentID;
+    public void setStudentid(String studentid) {
+        this.studentid = studentid;
     }
 
-    public String getStudentCode() {
-        return StudentCode;
+    public String getStudentcode() {
+        return studentcode;
     }
 
-    public void setStudentCode(String StudentCode) {
-        this.StudentCode = StudentCode;
+    public void setStudentcode(String studentcode) {
+        this.studentcode = studentcode;
     }
 
-    public String getStudentSurname() {
-        return StudentSurname;
+    public String getStudentsurname() {
+        return studentsurname;
     }
 
-    public void setStudentSurname(String StudentSurname) {
-        this.StudentSurname = StudentSurname;
+    public void setStudentsurname(String studentsurname) {
+        this.studentsurname = studentsurname;
     }
 
-    public String getStudentMiddlename() {
-        return StudentMiddlename;
+    public String getStudentmiddlename() {
+        return studentmiddlename;
     }
 
-    public void setStudentMiddlename(String StudentMiddlename) {
-        this.StudentMiddlename = StudentMiddlename;
+    public void setStudentmiddlename(String studentmiddlename) {
+        this.studentmiddlename = studentmiddlename;
     }
 
-    public String getStudentGivenname() {
-        return StudentGivenname;
+    public String getStudentgivenname() {
+        return studentgivenname;
     }
 
-    public void setStudentGivenname(String StudentGivenname) {
-        this.StudentGivenname = StudentGivenname;
+    public void setStudentgivenname(String studentgivenname) {
+        this.studentgivenname = studentgivenname;
     }
 
-    public String getStudentEmail() {
-        return StudentEmail;
+    public String getStudentemail() {
+        return studentemail;
     }
 
-    public void setStudentEmail(String StudentEmail) {
-        this.StudentEmail = StudentEmail;
-    }
-
-   
-
-    public ArrayList<StudentGroup> getStudentgroups() {
-        return studentgroups;
-    }
-
-    public void setStudentgroups(ArrayList<StudentGroup> studentgroups) {
-        this.studentgroups = studentgroups;
+    public void setStudentemail(String studentemail) {
+        this.studentemail = studentemail;
     }
 
     @Override
     public String toString() {
-        return "Student{" + "StudentID=" + StudentID + ", StudentCode=" + StudentCode + ", StudentSurname=" + StudentSurname + ", StudentMiddlename=" + StudentMiddlename + ", StudentGivenname=" + StudentGivenname + ", StudentEmail=" + StudentEmail + ", GroupID=" + GroupID + ", attendances=" + attendances + ", studentgroups=" + studentgroups + '}';
+        return "Student{" + "studentid=" + studentid + ", studentcode=" + studentcode + ", studentsurname=" + studentsurname + ", studentmiddlename=" + studentmiddlename + ", studentgivenname=" + studentgivenname + ", studentemail=" + studentemail + '}';
     }
 
-    
 }
