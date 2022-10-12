@@ -83,21 +83,7 @@ public class Student {
         this.StudentEmail = StudentEmail;
     }
 
-    public Group getGroupID() {
-        return GroupID;
-    }
-
-    public void setGroupID(Group GroupID) {
-        this.GroupID = GroupID;
-    }
-
-    public ArrayList<Attendance> getAttendances() {
-        return attendances;
-    }
-
-    public void setAttendances(ArrayList<Attendance> attendances) {
-        this.attendances = attendances;
-    }
+   
 
     public ArrayList<StudentGroup> getStudentgroups() {
         return studentgroups;
