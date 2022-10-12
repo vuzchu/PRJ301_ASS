@@ -4,9 +4,17 @@
         <servlet-name>ListAttendanceController</servlet-name>
         <servlet-class>controller.ListAttendanceController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>scheduleController</servlet-name>
+        <servlet-class>controller.scheduleController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ListAttendanceController</servlet-name>
         <url-pattern>/student/list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>scheduleController</servlet-name>
+        <url-pattern>/student/schedule</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

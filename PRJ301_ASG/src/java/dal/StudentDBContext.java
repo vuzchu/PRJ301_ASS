@@ -22,8 +22,9 @@ public class StudentDBContext extends DBContext {
             
             students.add(new Student("1", "He150798", "Chu" , "Quang" , "Vu", "vucq"));
             students.add(new Student("2", "HE150567", "Nguyen" , "Thanh" , "Long", "longnt"));
-             students.add(new Student("3", "He150785", "Vu" , "Nam" , "son", "sonvn"));     
+            students.add(new Student("3", "He150785", "Vu" , "Nam" , "son", "sonvn"));     
         } catch (Exception e) {
+            
         }
         return students;
     }

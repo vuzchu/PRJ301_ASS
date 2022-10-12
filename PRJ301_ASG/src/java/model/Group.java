@@ -11,26 +11,60 @@ import java.util.ArrayList;
  * @author vu
  */
 public class Group {
-    private int GroupID;
-    private String GroupName;
-    private Instructor InstructorID;
-    private Course CourseID;
+    private int groupid;
+    private String groupname;
+    private String instructorid;
+    private String courseid;
     //private Student StudentID;
     private ArrayList<Session> sessions = new ArrayList<>();
     private ArrayList<StudentGroup> studentgroups = new ArrayList<>();
-    
-    /*
-    public Student getStudentID() {
-        return StudentID;
+
+    public Group() {
     }
-    public void setStudentID(Student StudentID) {
-        this.StudentID = StudentID;
+
+    public Group(int groupid, String groupname, String instructorid, String courseid) {
+        this.groupid = groupid;
+        this.groupname = groupname;
+        this.instructorid = instructorid;
+        this.courseid = courseid;
     }
+
+    public int getGroupid() {
+        return groupid;
+    }
+
+    public void setGroupid(int groupid) {
+        this.groupid = groupid;
+    }
+
+    public String getGroupname() {
+        return groupname;
+    }
+
+    public void setGroupname(String groupname) {
+        this.groupname = groupname;
+    }
+
+    public String getInstructorid() {
+        return instructorid;
+    }
+
+    public void setInstructorid(String instructorid) {
+        this.instructorid = instructorid;
+    }
+
+    public String getCourseid() {
+        return courseid;
+    }
+
+    public void setCourseid(String courseid) {
+        this.courseid = courseid;
+    }
+
     public ArrayList<Session> getSessions() {
         return sessions;
     }
-    */
-    
+
     public void setSessions(ArrayList<Session> sessions) {
         this.sessions = sessions;
     }
@@ -42,40 +76,15 @@ public class Group {
     public void setStudentgroups(ArrayList<StudentGroup> studentgroups) {
         this.studentgroups = studentgroups;
     }
+
+    @Override
+    public String toString() {
+        return "Group{" + "groupid=" + groupid + ", groupname=" + groupname + ", instructorid=" + instructorid + ", courseid=" + courseid + ", sessions=" + sessions + ", studentgroups=" + studentgroups + '}';
+    }
+
     
     
     
-    public int getGroupID() {
-        return GroupID;
-    }
-
-    public void setGroupID(int GroupID) {
-        this.GroupID = GroupID;
-    }
-
-    public String getGroupName() {
-        return GroupName;
-    }
-
-    public void setGroupName(String GroupName) {
-        this.GroupName = GroupName;
-    }
-
-    public Instructor getInstructorID() {
-        return InstructorID;
-    }
-
-    public void setInstructorID(Instructor InstructorID) {
-        this.InstructorID = InstructorID;
-    }
-
-    public Course getCourseID() {
-        return CourseID;
-    }
-
-    public void setCourseID(Course CourseID) {
-        this.CourseID = CourseID;
-    }
     
     
 }
