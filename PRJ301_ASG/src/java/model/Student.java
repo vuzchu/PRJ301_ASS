@@ -4,64 +4,113 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author vu
  */
 public class Student {
-
-    private int studentid;
-    private String studentname;
-    private boolean gender;
-    private int AttendaceCount;
+    
+ private String StudentID;
+    private String StudentCode;
+    private String StudentSurname;
+    private String StudentMiddlename;
+    private String StudentGivenname;
+    private String StudentEmail;
+    private Group GroupID;
+    private ArrayList<Attendance> attendances = new ArrayList<>();
+    private ArrayList<StudentGroup> studentgroups = new ArrayList<>();
 
     public Student() {
     }
 
-    public Student(int studentid, String studentname, boolean gender, int AttendaceCount) {
-        this.studentid = studentid;
-        this.studentname = studentname;
-        this.gender = gender;
-        this.AttendaceCount = AttendaceCount;
+    public Student(String StudentID, String StudentCode, String StudentSurname, String StudentMiddlename, String StudentGivenname, String StudentEmail, Group GroupID) {
+        this.StudentID = StudentID;
+        this.StudentCode = StudentCode;
+        this.StudentSurname = StudentSurname;
+        this.StudentMiddlename = StudentMiddlename;
+        this.StudentGivenname = StudentGivenname;
+        this.StudentEmail = StudentEmail;
+        this.GroupID = GroupID;
     }
 
-    public int getStudentid() {
-        return studentid;
+    public String getStudentID() {
+        return StudentID;
     }
 
-    public void setStudentid(int studentid) {
-        this.studentid = studentid;
+    public void setStudentID(String StudentID) {
+        this.StudentID = StudentID;
     }
 
-    public String getStudentname() {
-        return studentname;
+    public String getStudentCode() {
+        return StudentCode;
     }
 
-    public void setStudentname(String studentname) {
-        this.studentname = studentname;
+    public void setStudentCode(String StudentCode) {
+        this.StudentCode = StudentCode;
     }
 
-    public boolean isGender() {
-        return gender;
+    public String getStudentSurname() {
+        return StudentSurname;
     }
 
-    public void setGender(boolean gender) {
-        this.gender = gender;
+    public void setStudentSurname(String StudentSurname) {
+        this.StudentSurname = StudentSurname;
     }
 
-    public int getAttendaceCount() {
-        return AttendaceCount;
+    public String getStudentMiddlename() {
+        return StudentMiddlename;
     }
 
-    public void setAttendaceCount(int AttendaceCount) {
-        this.AttendaceCount = AttendaceCount;
+    public void setStudentMiddlename(String StudentMiddlename) {
+        this.StudentMiddlename = StudentMiddlename;
+    }
+
+    public String getStudentGivenname() {
+        return StudentGivenname;
+    }
+
+    public void setStudentGivenname(String StudentGivenname) {
+        this.StudentGivenname = StudentGivenname;
+    }
+
+    public String getStudentEmail() {
+        return StudentEmail;
+    }
+
+    public void setStudentEmail(String StudentEmail) {
+        this.StudentEmail = StudentEmail;
+    }
+
+    public Group getGroupID() {
+        return GroupID;
+    }
+
+    public void setGroupID(Group GroupID) {
+        this.GroupID = GroupID;
+    }
+
+    public ArrayList<Attendance> getAttendances() {
+        return attendances;
+    }
+
+    public void setAttendances(ArrayList<Attendance> attendances) {
+        this.attendances = attendances;
+    }
+
+    public ArrayList<StudentGroup> getStudentgroups() {
+        return studentgroups;
+    }
+
+    public void setStudentgroups(ArrayList<StudentGroup> studentgroups) {
+        this.studentgroups = studentgroups;
     }
 
     @Override
     public String toString() {
-        return "Student{" + "studentid=" + studentid + ", studentname=" + studentname + ", gender=" + gender + ", AttendaceCount=" + AttendaceCount + '}';
+        return "Student{" + "StudentID=" + StudentID + ", StudentCode=" + StudentCode + ", StudentSurname=" + StudentSurname + ", StudentMiddlename=" + StudentMiddlename + ", StudentGivenname=" + StudentGivenname + ", StudentEmail=" + StudentEmail + ", GroupID=" + GroupID + ", attendances=" + attendances + ", studentgroups=" + studentgroups + '}';
     }
 
-   
-
+    
 }

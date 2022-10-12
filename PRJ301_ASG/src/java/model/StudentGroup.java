@@ -9,6 +9,23 @@ package model;
  * @author vu
  */
 public class StudentGroup {
+    private Student StudentID;
+    private Group GroupID;
 
-  
+    public Student getStudentID() {
+        return StudentID;
+    }
+
+    public void setStudentID(Student StudentID) {
+        this.StudentID = StudentID;
+    }
+
+    public Group getGroupID() {
+        return GroupID;
+    }
+
+    public void setGroupID(Group GroupID) {
+        this.GroupID = GroupID;
+    }
+    
 }

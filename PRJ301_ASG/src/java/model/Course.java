@@ -9,47 +9,33 @@ package model;
  * @author vu
  */
 public class Course {
+    private String CourseID;
+    private String CourseName;
+    private ArrayList<Group> groups = new ArrayList<>();
 
-    private String courseid;
-    private String coursename;
-    private int NumberOfslot;
-
-    public Course() {
+    public ArrayList<Group> getGroups() {
+        return groups;
     }
 
-    public Course(String courseid, String coursename, int NumberOfslot) {
-        this.courseid = courseid;
-        this.coursename = coursename;
-        this.NumberOfslot = NumberOfslot;
+    public void setGroups(ArrayList<Group> groups) {
+        this.groups = groups;
     }
 
-    public String getCourseid() {
-        return courseid;
+    public String getCourseID() {
+        return CourseID;
     }
 
-    public void setCourseid(String courseid) {
-        this.courseid = courseid;
+    public void setCourseID(String CourseID) {
+        this.CourseID = CourseID;
     }
 
-    public String getCoursename() {
-        return coursename;
+    public String getCourseName() {
+        return CourseName;
     }
 
-    public void setCoursename(String coursename) {
-        this.coursename = coursename;
+    public void setCourseName(String CourseName) {
+        this.CourseName = CourseName;
     }
-
-    public int getNumberOfslot() {
-        return NumberOfslot;
-    }
-
-    public void setNumberOfslot(int NumberOfslot) {
-        this.NumberOfslot = NumberOfslot;
-    }
-
-    @Override
-    public String toString() {
-        return "Course{" + "courseid=" + courseid + ", coursename=" + coursename + ", NumberOfslot=" + NumberOfslot + '}';
-    }
-
+    
+    
 }
