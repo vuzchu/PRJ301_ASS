@@ -8,11 +8,28 @@ import java.util.ArrayList;
 
 /**
  *
- * @author vu
+ * @author sonnt
  */
 public class Room {
-    private String RoomID;
+    private int id;
+    private String name;
     private ArrayList<Session> sessions = new ArrayList<>();
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public ArrayList<Session> getSessions() {
         return sessions;
@@ -20,14 +37,6 @@ public class Room {
 
     public void setSessions(ArrayList<Session> sessions) {
         this.sessions = sessions;
-    }
-    
-    public String getRoomID() {
-        return RoomID;
-    }
-
-    public void setRoomID(String RoomID) {
-        this.RoomID = RoomID;
     }
     
 }

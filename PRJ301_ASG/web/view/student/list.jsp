@@ -23,22 +23,28 @@
                     <th>Given name</th>
                     <th>Email</th>
                     <th>Status</th>
+                    <th>Take by</th>
                 </tr>
             </thead>
             <tbody>
                 <c:forEach items="${requestScope.students}" var="s">
                     <tr>
-                        <td>${s.studentid}</td>
-                        <td>${s.studentcode}</td>
-                        <td>${s.studentsurname}</td><!-- <td></td> -->
-                        <td>${s.studentmiddlename}</td><!-- comment -->
-                        <td>${s.studentgivenname}</td><!-- comment -->
-                        <td>${s.studentemail}</td><!-- comment -->
-                        <td style="color: green">Attended</td>
+                        <td>${s.studentid}</td><!--comment-->
+                        <td>${s.studentcode}</td><!--comment-->
+                        <td>${s.studentsurname}</td><!--comment-->
+                        <td>${s.studentmiddlename}</td><!--comment-->
+                        <td>${s.studentgivenname}</td><!--comment-->
+                        <td>${s.studentemail}</td><!--comment-->
+                        <td>
+                            Attended <input type="radio" name="status" value="" />
+                            Absent<input type="radio" name="status" value="" />
+                        </td>
+
+                        <th>Sonnt5</th>
                     </tr>
                 </c:forEach>
             </tbody>
         </table>
-
+        <input type="submit" value="Save" />
     </body>
 </html>

@@ -4,96 +4,94 @@
  */
 package model;
 
-import java.security.acl.Group;
+import java.sql.Date;
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  *
- * @author vu
+ * @author sonnt
  */
 public class Session {
-    private int SessionID;
-    private int SessionNumber;
-    private Date SessionDate;
-    private String Semester;
-    private Room RoomID;
-    private Timeslot TimeslotID;
-    private Group GroupID;
-    private Instructor InstructorID;
-    private ArrayList<Attendance> attendances = new ArrayList<>();
+    private int id;
+    private Group group;
+    private Room room;
+    private Lecturer lecturer;
+    private TimeSlot slot;
+    private ArrayList<Attandance> atts = new ArrayList<>();
+    private Date date;
+    private int index;
+    private boolean attanded;
 
-    public Instructor getInstructorID() {
-        return InstructorID;
-    }
-
-    public void setInstructorID(Instructor InstructorID) {
-        this.InstructorID = InstructorID;
+    public int getId() {
+        return id;
     }
 
-    public ArrayList<Attendance> getAttendances() {
-        return attendances;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setAttendances(ArrayList<Attendance> attendances) {
-        this.attendances = attendances;
-    }
-    
-    public int getSessionID() {
-        return SessionID;
+    public Group getGroup() {
+        return group;
     }
 
-    public void setSessionID(int SessionID) {
-        this.SessionID = SessionID;
+    public void setGroup(Group group) {
+        this.group = group;
     }
 
-    public int getSessionNumber() {
-        return SessionNumber;
+    public Room getRoom() {
+        return room;
     }
 
-    public void setSessionNumber(int SessionNumber) {
-        this.SessionNumber = SessionNumber;
+    public void setRoom(Room room) {
+        this.room = room;
     }
 
-    public Date getSessionDate() {
-        return SessionDate;
+    public Lecturer getLecturer() {
+        return lecturer;
     }
 
-    public void setSessionDate(Date SessionDate) {
-        this.SessionDate = SessionDate;
+    public void setLecturer(Lecturer lecturer) {
+        this.lecturer = lecturer;
     }
 
-    public String getSemester() {
-        return Semester;
+    public TimeSlot getSlot() {
+        return slot;
     }
 
-    public void setSemester(String Semester) {
-        this.Semester = Semester;
+    public void setSlot(TimeSlot slot) {
+        this.slot = slot;
     }
 
-    public Room getRoomID() {
-        return RoomID;
+    public ArrayList<Attandance> getAtts() {
+        return atts;
     }
 
-    public void setRoomID(Room RoomID) {
-        this.RoomID = RoomID;
+    public void setAtts(ArrayList<Attandance> atts) {
+        this.atts = atts;
     }
 
-    public Timeslot getTimeslotID() {
-        return TimeslotID;
+    public Date getDate() {
+        return date;
     }
 
-    public void setTimeslotID(Timeslot TimeslotID) {
-        this.TimeslotID = TimeslotID;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public Group getGroupID() {
-        return GroupID;
+    public int getIndex() {
+        return index;
     }
 
-    public void setGroupID(Group GroupID) {
-        this.GroupID = GroupID;
+    public void setIndex(int index) {
+        this.index = index;
     }
-    
+
+    public boolean isAttanded() {
+        return attanded;
+    }
+
+    public void setAttanded(boolean attanded) {
+        this.attanded = attanded;
+    }
     
 }
