@@ -14,7 +14,7 @@ import model.Account;
 
 /**
  *
- * @author sonnt
+ * @author vu
  */
 public abstract class BaseAuthenticationController extends HttpServlet {
     private boolean isAuthen(HttpServletRequest req)

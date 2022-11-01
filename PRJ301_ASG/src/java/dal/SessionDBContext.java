@@ -22,7 +22,7 @@ import model.TimeSlot;
 
 /**
  *
- * @author sonnt
+ * @author vu
  */
 public class SessionDBContext extends DBContext<Session> {
 

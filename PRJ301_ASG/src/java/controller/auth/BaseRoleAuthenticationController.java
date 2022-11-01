@@ -14,7 +14,7 @@ import model.Role;
 
 /**
  *
- * @author sonnt
+ * @author vu
  */
 public abstract class BaseRoleAuthenticationController extends BaseAuthenticationController {
 

@@ -16,7 +16,7 @@ import model.Role;
 
 /**
  *
- * @author sonnt
+ * @author vu
  */
 public class AccountDBContext extends DBContext<Account> {
 
