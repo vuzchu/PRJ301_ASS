@@ -9,7 +9,6 @@ import dal.assignment.LecturerDBContext;
 import dal.assignment.SessionDBContext;
 import dal.assignment.TimeSlotDBContext;
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -36,7 +35,7 @@ public class TimetableController extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        int lid = Integer.parseInt(request.getParameter("lid"));
+          int lid = Integer.parseInt(request.getParameter("lid"));
         String raw_from = request.getParameter("from");
         String raw_to = request.getParameter("to");
         java.sql.Date from = null;
@@ -73,7 +72,6 @@ public class TimetableController extends HttpServlet {
         request.setAttribute("lecturer", lecturer);
         
         request.getRequestDispatcher("../view/lecturer/timetable.jsp").forward(request, response);
-        
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -103,7 +101,13 @@ public class TimetableController extends HttpServlet {
         processRequest(request, response);
     }
 
-    
-
+    /** 
+     * Returns a short description of the servlet.
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
 
 }

@@ -55,6 +55,7 @@ public class LoginController extends HttpServlet {
         {
             request.getSession().setAttribute("account", account);
             response.getWriter().println("login successful!");
+            response.sendRedirect("view/home.jsp");
         }
         else
         {

@@ -1,8 +1,4 @@
-<%-- 
-    Document   : login
-    Created on : Oct 18, 2022, 11:42:12 AM
-    Author     : sonnt
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
